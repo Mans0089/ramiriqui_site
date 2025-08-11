@@ -62,3 +62,142 @@ img {
   margin: 1rem auto;
   box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
 }
+
+    /* ======== Estilo global (tus estilos, con ajuste en height) ======== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      height: auto; /* antes: 1vh, para que el contenido no se encoja */
+      width: auto;
+    }
+
+    /* Contenedor para limitar el ancho del contenido */
+    .contenedor { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+
+    /* ======== Barra de navegación ======== */
+    nav {
+      background-color: #0d7138a0;
+      padding: 0.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(2px);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      gap: 16px;
+    }
+    nav ul li { margin: 0; }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover { text-decoration: underline; }
+
+    /* ======== Hero ======== */
+    .hero { position: relative; }
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;            /* anula margen global de img */
+      border-radius: 0;     /* hero a ancho completo */
+      box-shadow: none;     /* sin sombra en hero */
+    }
+    .hero .overlay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(180deg, rgba(13,113,56,0.25), rgba(0,0,0,0.45));
+    }
+    .hero h1 {
+      color: #fff;
+      text-align: center;
+      font-size: 2.2rem;
+      margin: 0.25rem 0;
+    }
+    .hero p { color: #eef6f0; max-width: 680px; margin: .5rem auto 0; padding: 0; }
+
+    /* ======== Títulos ======== */
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: #222;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 1rem 0 0.5rem;
+      padding: 0 1rem;
+      color: #222;
+    }
+
+    /* ======== Texto ======== */
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0.8rem 0;
+      padding: 0 1rem;
+    }
+    .resumen { color: #555; font-size: .95rem; margin: .2rem 0 1rem; padding: 0 1rem; }
+
+    /* ======== Listas ======== */
+    ul { padding: 0 2rem; margin: 0.5rem 0 1rem; }
+
+    /* ======== Fotos ======== */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin: 1rem auto;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* ======== Secciones ======== */
+    .seccion { padding: 1rem 0 1.5rem; }
+
+    /* ======== Tarjetas ======== */
+    .tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; padding: 0 1rem; }
+    .tarjeta {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      padding: 1rem;
+      border: 1px solid #e8e8e8;
+    }
+    .tarjeta h3 { margin: .2rem 0 .4rem; font-size: 1.05rem; color: #222; padding: 0; }
+    .tarjeta p { padding: 0; margin: 0; }
+    .etiqueta { background: #0d7138; color: #fff; font-size: .8rem; padding: .15rem .5rem; border-radius: 999px; display: inline-block; margin-bottom: .5rem; }
+
+    /* ======== Tabla simple ======== */
+    .tabla { width: 100%; border-collapse: collapse; margin: 0 1rem 1rem; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+    .tabla th, .tabla td { padding: .75rem 1rem; border-bottom: 1px solid #eee; text-align: left; }
+    .tabla th { background: #e7f3ec; color: #1e4d36; }
+    .tabla tr:last-child td { border-bottom: 0; }
+
+    /* ======== CTA ======== */
+    .cta { display: flex; gap: .75rem; padding: 0 1rem 1.5rem; flex-wrap: wrap; }
+    .boton { display: inline-block; padding: .6rem 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; }
+    .boton-primario { background: #0d7138; color: #fff; }
+    .boton-secundario { background: transparent; color: #0d7138; border: 2px solid #0d7138; }
+
+    /* ======== Footer ======== */
+    footer { text-align: center; padding: 1rem 0 2rem; }
+    footer a { color: #0d7138; font-weight: bold; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ======== Responsivo ======== */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.6rem; }
+      .hero p { font-size: .95rem; }
+    }

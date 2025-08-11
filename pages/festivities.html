@@ -1,41 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
-  <title>Festividades de MUNICIPIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Festividades de Ramiriquí</title>
+  <meta name="description" content="Calendario festivo, actividades culturales y preservación de tradiciones en Ramiriquí, Boyacá." />
 </head>
-<body>
-  <img src="https://situr.boyaca.gov.co/wp-content/uploads/2017/05/Fiesta-Virgen-Las-Mercedes-1024x420.jpg">
+<body id="inicio">
+  <!-- Navegación en español -->
+  <nav aria-label="Navegación principal">
+    <ul class="contenedor" style="gap: 24px">
+      <li><a href="#calendario">Calendario</a></li>
+      <li><a href="#actividades">Actividades</a></li>
+      <li><a href="#comunidad">Comunidad</a></li>
+      <li><a href="#tradiciones">Tradiciones</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section>
+  <!-- Hero a ancho completo con overlay de texto -->
+  <section class="hero" aria-label="Encabezado visual">
+    <img src="https://situr.boyaca.gov.co/wp-content/uploads/2017/05/Fiesta-Virgen-Las-Mercedes-1024x420.jpg" alt="Celebración tradicional en Ramiriquí, Boyacá" loading="lazy" />
+    <div class="overlay">
+      <div class="contenedor">
+        <h1>Festividades de Ramiriquí</h1>
+        <p>Calendario, actividades y tradiciones que mantienen viva la esencia del pueblo.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="contenedor">
+    <!-- Calendario -->
+    <section id="calendario" class="seccion">
       <h2>Calendario festivo</h2>
-      <ul>
-        <li>Enero: Fiesta patronal en honor a San Sebastián</li>
-        <li>Julio: Festival de la música campesina</li>
-        <li>Noviembre: Encuentro de danzas tradicionales</li>
-      </ul>
+      <p class="resumen">Fechas orientativas. Confirma la programación oficial con la Alcaldía o la oficina de turismo.</p>
 
+      <table class="tabla" aria-label="Tabla de eventos por mes">
+        <thead>
+          <tr>
+            <th>Mes</th>
+            <th>Evento</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Enero</td>
+            <td>Fiesta patronal de San Sebastián</td>
+            <td>Procesiones, música y gastronomía local.</td>
+          </tr>
+          <tr>
+            <td>Julio</td>
+            <td>Festival de la música campesina</td>
+            <td>Conciertos al aire libre y muestras artísticas.</td>
+          </tr>
+          <tr>
+            <td>Noviembre</td>
+            <td>Encuentro de danzas tradicionales</td>
+            <td>Comparsas, grupos invitados y desfile en el parque principal.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cta">
+        <a href="#actividades" class="boton boton-primario">Ver actividades</a>
+        <a href="../index.html" class="boton boton-secundario">Regresar</a>
+      </div>
+    </section>
+
+    <!-- Actividades -->
+    <section id="actividades" class="seccion">
       <h2>Actividades culturales</h2>
-      <p>
-        Las fiestas incluyen comparsas, muestras gastronómicas, conciertos, concursos folclóricos y ferias de emprendimiento local.
-      </p>
+      <p class="resumen">Planes típicos durante las celebraciones.</p>
 
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <span class="etiqueta">🎺 Música</span>
+          <h3>Conciertos y bandas</h3>
+          <p>Presentaciones locales y encuentros de cuerdas y tiples.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="etiqueta">🍲 Gastronomía</span>
+          <h3>Muestras y feria</h3>
+          <p>Arepa boyacense, cuchuco, postres y productos de emprendimiento.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="etiqueta">💃 Folclor</span>
+          <h3>Comparsas y danzas</h3>
+          <p>Desfiles por el parque principal y concurso folclórico.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="etiqueta">🛍️ Artesanías</span>
+          <h3>Mercado creativo</h3>
+          <p>Tejidos, cerámica y recuerdos hechos a mano con identidad boyacense.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Comunidad -->
+    <section id="comunidad" class="seccion">
       <h2>Participación comunitaria</h2>
-      <p>
-        Las celebraciones involucran a colegios, asociaciones campesinas, artistas locales y visitantes que se integran a los eventos.
-      </p>
+      <p class="resumen">Las festividades son de todos y para todos.</p>
+      <ul>
+        <li>📚 Instituciones educativas y semilleros culturales.</li>
+        <li>🌾 Asociaciones campesinas y productores locales.</li>
+        <li>🎨 Artesanos y artistas invitados.</li>
+        <li>🤝 Visitantes que se integran con respeto.</li>
+      </ul>
+    </section>
 
+    <!-- Tradiciones -->
+    <section id="tradiciones" class="seccion">
       <h2>Preservación de tradiciones</h2>
-      <p>
-        Se rescatan mitos, leyendas y costumbres ancestrales transmitidas oralmente por generaciones.
-      </p>
+      <p class="resumen">Cuidamos las raíces que nos identifican.</p>
+      <p>Se promueven mitos, leyendas y costumbres ancestrales transmitidas de generación en generación. La comunidad impulsa talleres, recitales de coplas y encuentros que fortalecen la memoria colectiva.</p>
     </section>
   </main>
+
   <footer>
-    <a href="../index.html">Regresar</a>
+    <p style="margin:.5rem 1rem;">© 2025 Ramiriquí • Página de festividades</p>
+    <p><a href="#inicio">Volver al inicio</a></p>
   </footer>
 </body>
 </html>
