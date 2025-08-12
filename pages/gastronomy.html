@@ -1,42 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
-  <title>Gastronomia de MUNICIPIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ramiriquí — Gastronomía</title>
+  <meta name="description" content="Platos típicos, ingredientes locales y técnicas tradicionales de la gastronomía en Ramiriquí, Boyacá.">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
-  <img src="https://colombiaartesanal.com.co/wp-content/uploads/cocina-gastronomia-boyaca.jpg">
+<body id="inicio">
+  <!-- Navegación -->
+  <nav aria-label="Navegación principal">
+    <ul class="contenedor" style="gap: 24px">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="history.html">Historia</a></li>
+      <li><a href="#inicio">Gastronomía</a></li>
+      <li><a href="tourism.html">Turismo</a></li>
+      <li><a href="festivities.html">Festividades</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section>
+  <!-- Hero con overlay -->
+  <section class="hero" aria-label="Encabezado visual">
+    <img
+      src="https://colombiaartesanal.com.co/wp-content/uploads/cocina-gastronomia-boyaca.jpg"
+      alt="Platos típicos de la gastronomía boyacense"
+      loading="lazy"
+    />
+    <div class="overlay">
+      <div class="contenedor">
+        <h1>Gastronomía de Ramiriquí</h1>
+        <p>Sabores andinos con recetas tradicionales, productos frescos y cocina de leña.</p>
+        <div class="cta" style="justify-content:center; margin-top:.75rem;">
+          <a class="boton boton-primario" href="#platos">Ver platos</a>
+          <a class="boton boton-primario" href="#ingredientes">Ingredientes locales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="contenedor">
+    <!-- Platos -->
+    <section id="platos" class="seccion">
       <h2>Platos tradicionales</h2>
-      <ul>
-        <li>Cocido boyacense</li>
-        <li>Arepas de maíz pelao</li>
-        <li>Mazamorra chiquita</li>
-        <li>Chicha fermentada</li>
-      </ul>
+      <p class="resumen">Recetas que encontrarás en ferias, cocinas caseras y comedores típicos.</p>
 
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <span class="etiqueta">🍲 Olla</span>
+          <h3>Cocido boyacense</h3>
+          <p>Variedad de tubérculos, carnes y mazorca; ideal para el clima frío de montaña.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="etiqueta">🥯 Maíz</span>
+          <h3>Arepa de maíz pelao</h3>
+          <p>Textura suave y sabor auténtico. Perfecta con queso y chocolate caliente.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="etiqueta">🥣 Tradición</span>
+          <h3>Mazamorra chiquita</h3>
+          <p>Maíz, arveja y hierbas; cocción lenta que concentra aromas de hogar.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="etiqueta">🍶 Bebida</span>
+          <h3>Chicha fermentada</h3>
+          <p>Bebida ancestral a base de maíz, protagonista en encuentros festivos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Ingredientes -->
+    <section id="ingredientes" class="seccion">
       <h2>Ingredientes locales</h2>
-      <p>
-        La base de la cocina está compuesta por productos como papa criolla, maíz, habas, carne de res y tubérculos cultivados en la región.
-      </p>
+      <p class="resumen">La despensa del altiplano: productos frescos y de temporada.</p>
 
+      <table class="tabla" aria-label="Ingredientes locales y usos">
+        <thead>
+          <tr><th>Ingrediente</th><th>Origen</th><th>Uso típico</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Papa criolla</td><td>Altiplano boyacense</td><td>Fritas, sopas y guisos</td></tr>
+          <tr><td>Maíz</td><td>Fincas y huertas</td><td>Arepas, envueltos, chicha</td></tr>
+          <tr><td>Habas y arvejas</td><td>Huertas locales</td><td>Sopas y acompañantes</td></tr>
+          <tr><td>Carne de res</td><td>Productores regionales</td><td>Caldos y cocidos</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Técnicas -->
+    <section id="tecnicas" class="seccion">
       <h2>Sabores y técnicas</h2>
       <p>
-        Se utilizan métodos como la cocción lenta en leña, el horneado artesanal y la fermentación natural, lo que da profundidad a los sabores.
-      </p>
-
-      <h2>Festivales gastronómicos</h2>
-      <p>
-        MUNICIPIO celebra anualmente ferias culinarias donde se exponen recetas típicas, bebidas autóctonas y dulces tradicionales.
+        La cocina tradicional privilegia la cocción lenta en leña, el horneado artesanal y la fermentación natural,
+        logrando preparaciones con profundidad y aromas a campo.
       </p>
     </section>
+
+    <!-- Ferias -->
+    <section id="ferias" class="seccion">
+      <h2>Festivales gastronómicos</h2>
+      <p>
+        Ramiriquí celebra ferias y encuentros culinarios donde se comparten recetas típicas, bebidas autóctonas y dulces tradicionales.
+        Son espacios para apoyar a productores y emprendedores locales.
+      </p>
+
+      <div class="cta" style="margin-top:.75rem;">
+        <a class="boton boton-primario" href="festivities.html">Ver calendario de fiestas</a>
+        <a class="boton boton-secundario" href="../index.html">Volver al inicio</a>
+      </div>
+    </section>
   </main>
+
   <footer>
-    <a href="../index.html">Regresar</a>
+    <p style="margin:.5rem 1rem;">© 2025 Ramiriquí • Gastronomía</p>
+    <p><a href="#inicio">Volver arriba</a></p>
   </footer>
 </body>
 </html>
