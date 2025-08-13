@@ -205,3 +205,11 @@ img {
       .hero h1 { font-size: 1.6rem; }
       .hero p { font-size: .95rem; }
     }
+
+  /* Hace el hero más bajito y recorta la imagen sin deformarla */
+  .hero img.hero-corto{
+    height: clamp(220px, 35vh, 420px);
+    width: 100%;
+    object-fit: cover;
+    object-position: center; 
+  }

@@ -3,24 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="/styles/style.css">
-  <title>Festividades de Ramiriquí</title>
-  <meta name="description" content="Calendario festivo, actividades culturales y preservación de tradiciones en Ramiriquí, Boyacá." />
+  <title>Ramiriquí — Festividades</title>
+  <meta name="description" content="Calendario festivo, actividades culturales y preservación de tradiciones en Ramiriquí, Boyacá.">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body id="inicio">
-  <!-- Navegación en español -->
+  <!-- NAV PRINCIPAL (igual a las demás páginas) -->
   <nav aria-label="Navegación principal">
     <ul class="contenedor" style="gap: 24px">
-      <li><a href="#calendario">Calendario</a></li>
-      <li><a href="#actividades">Actividades</a></li>
-      <li><a href="#comunidad">Comunidad</a></li>
-      <li><a href="#tradiciones">Tradiciones</a></li>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="history.html">Historia</a></li>
+      <li><a href="tourism.html">Turismo</a></li>
+      <li><a href="gastronomy.html">Gastronomía</a></li>
+      <li><a href="#inicio">Festividades</a></li>
     </ul>
   </nav>
 
-  <!-- Hero a ancho completo con overlay de texto -->
+  <!-- HERO -->
   <section class="hero" aria-label="Encabezado visual">
-    <img src="https://situr.boyaca.gov.co/wp-content/uploads/2017/05/Fiesta-Virgen-Las-Mercedes-1024x420.jpg" alt="Celebración tradicional en Ramiriquí, Boyacá" loading="lazy" />
+    <img
+      src="https://situr.boyaca.gov.co/wp-content/uploads/2017/05/Fiesta-Virgen-Las-Mercedes-1024x420.jpg"
+      alt="Celebración tradicional en Ramiriquí, Boyacá"
+      loading="lazy"
+    />
     <div class="overlay">
       <div class="contenedor">
         <h1>Festividades de Ramiriquí</h1>
@@ -30,7 +35,15 @@
   </section>
 
   <main class="contenedor">
-    <!-- Calendario -->
+    <!-- SUBMENÚ DE SECCIONES (anclas internas) -->
+    <div class="cta" style="justify-content:center; margin:1rem 0 0;">
+      <a class="boton boton-secundario" href="#calendario">Calendario</a>
+      <a class="boton boton-secundario" href="#actividades">Actividades</a>
+      <a class="boton boton-secundario" href="#comunidad">Comunidad</a>
+      <a class="boton boton-secundario" href="#tradiciones">Tradiciones</a>
+    </div>
+
+    <!-- CALENDARIO -->
     <section id="calendario" class="seccion">
       <h2>Calendario festivo</h2>
       <p class="resumen">Fechas orientativas. Confirma la programación oficial con la Alcaldía o la oficina de turismo.</p>
@@ -68,7 +81,7 @@
       </div>
     </section>
 
-    <!-- Actividades -->
+    <!-- ACTIVIDADES -->
     <section id="actividades" class="seccion">
       <h2>Actividades culturales</h2>
       <p class="resumen">Planes típicos durante las celebraciones.</p>
@@ -82,7 +95,7 @@
         <article class="tarjeta">
           <span class="etiqueta">🍲 Gastronomía</span>
           <h3>Muestras y feria</h3>
-          <p>Arepa boyacense, cuchuco, postres y productos de emprendimiento.</p>
+          <p>Arepa boyacense, cuchuco, postres y emprendimientos locales.</p>
         </article>
         <article class="tarjeta">
           <span class="etiqueta">💃 Folclor</span>
@@ -92,12 +105,12 @@
         <article class="tarjeta">
           <span class="etiqueta">🛍️ Artesanías</span>
           <h3>Mercado creativo</h3>
-          <p>Tejidos, cerámica y recuerdos hechos a mano con identidad boyacense.</p>
+          <p>Tejidos, cerámica y recuerdos hechos a mano.</p>
         </article>
       </div>
     </section>
 
-    <!-- Comunidad -->
+    <!-- COMUNIDAD -->
     <section id="comunidad" class="seccion">
       <h2>Participación comunitaria</h2>
       <p class="resumen">Las festividades son de todos y para todos.</p>
@@ -109,7 +122,7 @@
       </ul>
     </section>
 
-    <!-- Tradiciones -->
+    <!-- TRADICIONES -->
     <section id="tradiciones" class="seccion">
       <h2>Preservación de tradiciones</h2>
       <p class="resumen">Cuidamos las raíces que nos identifican.</p>
@@ -118,8 +131,8 @@
   </main>
 
   <footer>
-    <p style="margin:.5rem 1rem;">© 2025 Ramiriquí • Página de festividades</p>
-    <p><a href="#inicio">Volver al inicio</a></p>
+    <p style="margin:.5rem 1rem;">© 2025 Ramiriquí • Festividades</p>
+    <p><a href="#inicio">Volver arriba</a></p>
   </footer>
 </body>
 </html>
